@@ -1,7 +1,7 @@
 package main
 
 import (
-	app "go-app/internal"
+	app "github.com/anynines/tmp-homework-sh/kubernetes/docker/go-app/internal"
 )
 
 func main() {

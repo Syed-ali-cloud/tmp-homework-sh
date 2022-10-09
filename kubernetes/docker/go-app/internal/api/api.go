@@ -1,9 +1,10 @@
 package api
 
 import (
-	"go-app/internal/db"
 	"net/http"
 	"strconv"
+
+	"github.com/anynines/tmp-homework-sh/kubernetes/docker/go-app/internal/db"
 
 	"github.com/gin-gonic/gin"
 )
