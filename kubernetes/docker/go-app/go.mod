@@ -1,6 +1,5 @@
-module github.com/anynines/tmp-homework-sh/kubernetes/docker/go-app
+module go-app
 
-replace github.com/anynines/tmp-homework-sh/kubernetes/docker/go-app => github.com/anynines/tmp-homework-sh/kubernetes/docker/go-app v0.0.0-20221007074242-fe795e476578
 go 1.14
 
 require (

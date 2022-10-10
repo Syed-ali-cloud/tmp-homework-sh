@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/anynines/tmp-homework-sh/kubernetes/docker/go-app/internal/db"
+	"go-app/internal/db"
 
 	"github.com/gin-gonic/gin"
 )

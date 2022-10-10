@@ -1,6 +1,6 @@
 package internal
 
-import "github.com/anynines/tmp-homework-sh/kubernetes/docker/go-app/internal/api"
+import "go-app/internal/api"
 
 func Run() {
 	router := api.SetupAPI()
