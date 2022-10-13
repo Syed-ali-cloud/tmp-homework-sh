@@ -1,0 +1,14 @@
+apiVersion: v1  
+kind: Service                                 
+metadata:
+  name: go-app-postgres                
+  labels:                                     
+    app: go-app-postgres
+spec:
+  type: NodePort                              
+  selector:
+    app: go-app-postgres               
+  ports: 
+  - name: http
+    port: 8080
+    targetPort: 8080

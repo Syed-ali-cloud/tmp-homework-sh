@@ -1,0 +1,26 @@
+apiVersion: apps/v1 
+kind: Deployment                                  
+metadata:
+  name: go-app-postgres                    
+  labels:
+    app: go-app-postgres
+spec:
+  replicas: 1                                     
+  selector:
+    matchLabels: 
+      app: go-app-postgres                 
+  template:                                       
+    metadata:
+      labels:                                     
+        app: go-app-postgres
+    spec:                                         
+      containers:
+      - name: go-app-postgres 
+        image: syedalicloud/go-app:1.0.0       
+        imagePullPolicy: IfNotPresent             
+        ports:
+          - name: http
+            containerPort: 8080                   
+        envFrom:
+          - secretRef:
+              name: postgres-secret               
