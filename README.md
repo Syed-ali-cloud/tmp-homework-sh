@@ -6,7 +6,7 @@ This repository contains two kinds of homework for applicants.
 
 Template for a bosh based homework.
 
-## bosh and curl command:<br/>
+### bosh and curl command:<br/>
 
 1- bosh -d nginx-bosh deploy nginx-deployment.yml<br/>
 2- bosh vms (also we can use "bosh instances")<br/>
